@@ -19,7 +19,7 @@ def get_filters():
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     city_list = ["chicago", "new york city", "washington"]
     while True:
-        city = input("Enter the city would you like to review: chicago, new york city, or washington? ").lower()
+        city = input("Type the city would you like to review: chicago, new york city, or washington? ").lower()
         if city in city_list:
             break
         else:
@@ -28,7 +28,7 @@ def get_filters():
     # TO DO: get user input for month (all, january, february, ... , june)
     month_list = ["all", "january", "february", "march", "april", "may", "june"]
     while True:
-        month = input("Enter the month would you like to review: all, january, february, march, april, may, june? ").lower()
+        month = input("Type the month would you like to review: all, january, february, march, april, may, june? ").lower()
         if month in month_list:
             break
         else:
