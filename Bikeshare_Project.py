@@ -1,6 +1,7 @@
 import time
 import pandas as pd
 import numpy as np
+import math
 
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
@@ -19,7 +20,7 @@ def get_filters():
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     city_list = ["chicago", "new york city", "washington"]
     while True:
-        city = input("Enter the city would you like to review: chicago, new york city, or washington? ").lower()
+        city = input("Type the city would you like to review: chicago, new york city, or washington? ").lower()
         if city in city_list:
             break
         else:
@@ -28,7 +29,7 @@ def get_filters():
     # TO DO: get user input for month (all, january, february, ... , june)
     month_list = ["all", "january", "february", "march", "april", "may", "june"]
     while True:
-        month = input("Enter the month would you like to review: all, january, february, march, april, may, june? ").lower()
+        month = input("Type the month would you like to review: all, january, february, march, april, may, june? ").lower()
         if month in month_list:
             break
         else:
@@ -169,8 +170,8 @@ def user_stats(df):
             # TO DO: Display counts of gender
             count_gender = df['Gender'].value_counts(dropna=True)
             print('\nGender Demographics: ','\n', count_gender,'\n')
-            common_gender = int(df['Gender'].mode()[0])
-            print('\nHigher Percentage Gender Demographic: ','\n', count_gender,'\n')
+            gender_demographics = int(df['Gender'].max())
+            print('\nHigher user base by gender: ','\n', count_gender,'\n')
             # TO DO: Display earliest, most recent, and most common year of birth
             earliest_birth_year = int(df['Birth Year'].min())
             most_recent_birth_year = int(df['Birth Year'].max())

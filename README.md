@@ -1,15 +1,14 @@
 ### Date created
-Include the date you created this project and README file.
+6/5/2020
 
 ### Project Title
-Replace the Project Title
+Bikeshare Project
 
 ### Description
-Describe what your project is about and what it does
+Looking at Bikeshare data in Chicago, New York, or Washington D.C. This project was completed for Udacity class.
 
 ### Files used
-Include the files used
+Bikeshare_Project.py
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+Udacity, Motivate
