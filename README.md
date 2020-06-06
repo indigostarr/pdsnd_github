@@ -11,4 +11,4 @@ Looking at Bikeshare data in Chicago, New York, or Washington D.C. This project 
 Bikeshare_Project.py
 
 ### Credits
-Udacity
+Udacity, Motivate
